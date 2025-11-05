@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Cara+Pro:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-cppay-border;
+  }
+  
+  body {
+    @apply text-cppay-text bg-transparent;
+    font-family: 'Cara Pro', 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cara Pro', 'Inter', system-ui, sans-serif;
+    @apply font-bold;
+  }
+
+  /* Improved scroll behavior */
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+}
+
+@layer components {
+  /* Premium Primary Button */
+  .btn-primary {
+    @apply bg-cppay-sky-500 hover:bg-cppay-sky-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 ease-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cppay-sky-500 focus:ring-opacity-50 shadow-lg shadow-cppay-sky-500/20 hover:shadow-xl hover:shadow-cppay-sky-500/30 active:scale-95;
+  }
+
+  /* Premium Secondary Button */
+  .btn-secondary {
+    @apply bg-cppay-navy-500 hover:bg-cppay-navy-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 ease-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cppay-navy-500 focus:ring-opacity-50 shadow-lg shadow-cppay-navy-500/20 hover:shadow-xl hover:shadow-cppay-navy-500/30 active:scale-95;
+  }
+
+  /* Card Styling with Premium Feel */
+  .card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 ease-out border border-cppay-border hover:border-cppay-sky-500 hover:-translate-y-1;
+  }
+
+  /* Glass Effect for Premium Look */
+  .glass {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+
+  /* Section Container */
+  .section-container {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Heading with Accent */
+  .heading-with-accent {
+    @apply text-cppay-navy-500;
+  }
+
+  .heading-accent {
+    @apply text-cppay-sky-500;
+  }
+
+  /* Premium Link Style */
+  .premium-link {
+    @apply text-cppay-sky-500 hover:text-cppay-sky-600 transition-colors duration-300 ease-out relative;
+  }
+
+  .premium-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-cppay-sky-500 transition-all duration-300 ease-out;
+  }
+
+  .premium-link:hover::after {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  /* Text balance for better typography */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Fade In Animation */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-down {
+    animation: fadeInDown 0.6s ease-out forwards;
+  }
+
+  /* Stagger Animation Delays */
+  .animation-delay-100 { animation-delay: 0.1s; }
+  .animation-delay-200 { animation-delay: 0.2s; }
+  .animation-delay-300 { animation-delay: 0.3s; }
+  .animation-delay-400 { animation-delay: 0.4s; }
+  .animation-delay-500 { animation-delay: 0.5s; }
+
+  /* Premium Hover Lift Effect */
+  .hover-lift {
+    @apply transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-lg;
+  }
+
+  /* Smooth Transition */
+  .smooth-transition {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  /* Perspective for 3D effects */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+
+  /* Gradient Shine Effect */
+  .gradient-shine {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+    background-size: 200% 100%;
+  }
+
+  .gradient-shine:hover {
+    animation: shimmer 2s infinite;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(243, 244, 246);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(209, 213, 219);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(156, 163, 175);
+}
+
+/* Premium Focus Styles */
+:focus-visible {
+  outline: 2px solid #0973b4;
+  outline-offset: 2px;
+}
