@@ -1,7 +1,9 @@
 # CPPay — Web2-Level UX for Crypto Payments 🚀
 
 [![Demo Video](https://img.shields.io/badge/🎥-Watch%20Demo-red?style=for-the-badge)](https://youtu.be/aiHVvPGKQCY)
-[![Live Web](https://img.shields.io/badge/🌐-Try%20Live%20App-blue?style=for-the-badge)](https://cp-pay.vercel.app/)
+
+<!-- [![Live Web](https://img.shields.io/badge/🌐-Try%20Live%20App-blue?style=for-the-badge)](https://cp-pay.vercel.app/) -->
+
 [![Pitch Deck](https://img.shields.io/badge/📊-Pitch%20Deck-green?style=for-the-badge)](https://youtu.be/qF0zz3oeVyg)
 
 > **Instant, Gasless, AI-Driven, and Self-Custodial Crypto Payments for Everyone — from Smartphones to Feature Phones**
@@ -146,18 +148,7 @@ CPPay delivers a unified crypto payment platform where users can transact seamle
 
 ### 📱 Live Application
 
-- **Web Landing Page**: [Try Live](https://cp-pay.vercel.app/)
-
-### 🔗 Smart Contract Addresses
-
-**Testnet Deployments:**
-
-| Contract               | Network 1 | Network 2 | Network 3 |
-| ---------------------- | --------- | --------- | --------- |
-| **CPPayPaymaster**     | `0x...`   | `0x...`   | `0x...`   |
-| **BillPaymentAdapter** | `0x...`   | `0x...`   | `0x...`   |
-| **SessionKeyModule**   | `0x...`   | `0x...`   | `0x...`   |
-| **SwapRouter**         | `0x...`   | `0x...`   | `0x...`   |
+- **Web Landing Page**: [Live Web](https://cp-pay.vercel.app/)
 
 ## 🚀 Quick Start Guide
 
@@ -307,11 +298,6 @@ npm run test:integration
 
 - [LinkedIn](https://www.linkedin.com/in/bilal-oyeleke)
 - [GitHub](https://github.com/Sobilo34/)
-
-**[Team Member 2]** - Blockchain Developer
-
-- [LinkedIn](https://linkedin.com/in/profile)
-- **Experience**: [Brief background]
 
 ## 🏆 Achievements & Recognition
 
