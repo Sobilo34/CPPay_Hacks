@@ -1,0 +1,364 @@
+{
+  "compiler": {
+    "version": "0.8.28+commit.7893614a"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "smartAccount",
+            "type": "address"
+          },
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "sessionKey",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint48",
+            "name": "validUntil",
+            "type": "uint48"
+          }
+        ],
+        "name": "SessionKeyCreated",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "smartAccount",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          }
+        ],
+        "name": "SessionKeyRevoked",
+        "type": "event"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "address",
+            "name": "smartAccount",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "txHash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "SessionKeyUsed",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "sessionKey",
+            "type": "address"
+          },
+          {
+            "internalType": "uint48",
+            "name": "validDuration",
+            "type": "uint48"
+          }
+        ],
+        "name": "createSessionKey",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "smartAccount",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          }
+        ],
+        "name": "getSessionKey",
+        "outputs": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "sessionKey",
+                "type": "address"
+              },
+              {
+                "internalType": "uint48",
+                "name": "validUntil",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint48",
+                "name": "validAfter",
+                "type": "uint48"
+              },
+              {
+                "internalType": "uint256",
+                "name": "sessionId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "isActive",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct SessionKeyModule.SessionKeyData",
+            "name": "",
+            "type": "tuple"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "smartAccount",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          }
+        ],
+        "name": "isSessionKeyValid",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          }
+        ],
+        "name": "revokeSessionKey",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "name": "sessionCount",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "name": "sessions",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "sessionKey",
+            "type": "address"
+          },
+          {
+            "internalType": "uint48",
+            "name": "validUntil",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "validAfter",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isActive",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "smartAccount",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sessionId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "txHash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "name": "validateSessionKey",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "details": "Enables one-time PIN/biometric approval for multiple transactions",
+      "kind": "dev",
+      "methods": {
+        "createSessionKey(address,uint48)": {
+          "params": {
+            "sessionKey": "Temporary key address",
+            "validDuration": "How long the session is valid (in seconds)"
+          }
+        },
+        "validateSessionKey(address,uint256,bytes32,bytes)": {
+          "params": {
+            "sessionId": "The session ID",
+            "signature": "Signature from session key",
+            "smartAccount": "The smart account address",
+            "txHash": "Transaction hash being signed"
+          }
+        }
+      },
+      "title": "SessionKeyModule",
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "createSessionKey(address,uint48)": {
+          "notice": "Create a new session key"
+        },
+        "getSessionKey(address,uint256)": {
+          "notice": "Get session key details"
+        },
+        "isSessionKeyValid(address,uint256)": {
+          "notice": "Check if session key is valid"
+        },
+        "revokeSessionKey(uint256)": {
+          "notice": "Revoke a session key"
+        },
+        "validateSessionKey(address,uint256,bytes32,bytes)": {
+          "notice": "Validate a session key signature"
+        }
+      },
+      "notice": "Allows temporary session keys for batch transactions",
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "contracts/SessionKeyModule.sol": "SessionKeyModule"
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": []
+  },
+  "sources": {
+    "contracts/SessionKeyModule.sol": {
+      "keccak256": "0x506602625354b4533c37823e9dd165bca04131329b0ffda0dcc6ac1e96101827",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://93528a1415ea4b4d0dc091c941397a424cfdf28a46d8945e9fc4cd191093da7d",
+        "dweb:/ipfs/Qmf9Yyam8XmrFKZbH7eiDZgXDBFHpG1Nex3iPvMRoRUWnc"
+      ]
+    }
+  },
+  "version": 1
+}
