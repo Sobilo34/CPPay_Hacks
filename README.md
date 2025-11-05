@@ -8,12 +8,6 @@
 
 > **Instant, Gasless, AI-Driven, and Self-Custodial Crypto Payments for Everyone — from Smartphones to Feature Phones**
 
-## 🏆 Hackathon Submission Links
-
-- **📊 Pitch Deck**: [View Presentation](https://youtu.be/qF0zz3oeVyg)
-- **🎓 Certification Links**: [Team Certifications](https://certs.hashgraphdev.com/72413451-8d61-4fe9-a13f-9febd333b3bc.pdf)
-- **🎥 Demo Video**: [Watch on YouTube](https://youtu.be/aiHVvPGKQCY)
-
 ---
 
 ## 🌟 Project Overview
@@ -140,15 +134,13 @@ CPPay delivers a unified crypto payment platform where users can transact seamle
     └────────────────┘ └─────────────────┘ └────────────────┘
 ```
 
-## 🎮 Live Demo & Smart Contracts
+- **📊 Pitch Deck**: [View Presentation](https://youtu.be/qF0zz3oeVyg)
 
-### 🎥 Demo Video
-
-**[Watch Full Demo](https://youtu.be/aiHVvPGKQCY)** - See CPPay in action!
-
-### 📱 Live Application
+- **🎥 Demo Video**: [Watch on YouTube](https://youtu.be/aiHVvPGKQCY)
 
 - **Web Landing Page**: [Live Web](https://cp-pay.vercel.app/)
+
+- **🎓 Certification Links**: [Team Certifications](https://certs.hashgraphdev.com/72413451-8d61-4fe9-a13f-9febd333b3bc.pdf)
 
 ## 🚀 Quick Start Guide
 
